@@ -147,60 +147,60 @@ footer h3 {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .container-right {
+    width: 100%;
+  }
+
+  .container-grid {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  #categories {
+    margin-bottom: 2rem;
+  }
   #navbar {
-    padding: 0 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #navbar h1 {
+    font-size: 1.5rem;
     padding-left: 0;
   }
-  .top-posts {
-    margin-top: 0;
-    height: 100%;
-    padding: 0;
-  }
-  .container {
-    padding: 0 0.5rem;
-  }
 
-  .container-grid {
-    grid-template-columns: 1fr;
+  #top-posts {
+    margin-top: 1rem;
   }
 
   .top-posts-card {
     margin-left: 0;
+    width: 100%;
   }
 
-  #recent-posts {
-    grid-row: 2;
-    margin-bottom: 0;
-  }
-  #categories {
-    margin-bottom: 1.5rem;
-  }
   .title-container {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 0.5rem;
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 0.5rem;
   }
   #title-container-posts {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
   }
-
   #banner-article img:first-of-type {
     display: none;
   }
   #banner-article img:nth-of-type(2) {
     display: flex;
-  }
-  #top-posts {
-    margin-top: 0;
-    padding-top: 0;
   }
 }
