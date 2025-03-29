@@ -34,6 +34,10 @@
 #banner-article {
   margin-top: 0.85rem;
 }
+#banner-article img:nth-of-type(2) {
+  display: none;
+}
+
 .title-container {
   color: white;
   background-color: #02a28f;
@@ -186,5 +190,12 @@ footer h3 {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+  }
+
+  #banner-article img:first-of-type {
+    display: none;
+  }
+  #banner-article img:nth-of-type(2) {
+    display: flex;
   }
 }
