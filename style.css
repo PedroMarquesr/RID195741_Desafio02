@@ -4,19 +4,24 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  max-width: 100%;
 }
+
 #navbar {
   background-color: #02a28f;
   color: white;
-  padding: 10px;
+  padding: 0.62rem;
   height: 4.37rem;
+  width: 100%;
 }
 #navbar h1 {
   padding-left: 7.5rem;
+
   font-size: 2.25rem;
 }
 .container {
   padding-left: 7.5rem;
+  width: 100%;
 }
 .container-right {
   width: 23rem;
@@ -40,6 +45,7 @@
   padding-right: 1.5rem;
   justify-content: space-between;
   border-radius: 0.65rem;
+  width: 100%;
 }
 .title-container h2 {
   font-size: 1.25rem;
@@ -120,6 +126,9 @@
 #recent-posts {
   margin-bottom: 4.06rem;
 }
+.card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 footer {
   height: 3rem;
   background-color: #02a28f;
@@ -131,4 +140,51 @@ footer {
 footer h3 {
   font-size: 0.875rem;
   color: white;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar h1 {
+    padding-left: 0;
+  }
+  .top-posts {
+    margin-top: 0;
+    height: 100%;
+    padding: 0;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-posts-card {
+    margin-left: 0;
+  }
+
+  #recent-posts {
+    grid-row: 2;
+  }
+  #categories {
+    margin-bottom: 1.5rem;
+  }
+  .title-container {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #title-container-posts {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
 }
