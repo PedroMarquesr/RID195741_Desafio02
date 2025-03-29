@@ -175,6 +175,7 @@ footer h3 {
 
   #recent-posts {
     grid-row: 2;
+    margin-bottom: 0;
   }
   #categories {
     margin-bottom: 1.5rem;
@@ -197,5 +198,9 @@ footer h3 {
   }
   #banner-article img:nth-of-type(2) {
     display: flex;
+  }
+  #top-posts {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
