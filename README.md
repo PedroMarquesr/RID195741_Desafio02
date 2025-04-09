@@ -18,12 +18,7 @@ Este projeto foi desenvolvido como parte de um desafio de front-end para avalia�
 
 ---
 
-## 🔗 Links
 
-- **Link Netlify:** *[Inserir link de deploy aqui]*  
-- **Repositório GitHub:** *[Inserir link do repositório aqui]*  
-
----
 
 ## 💻 Responsividade
 
