@@ -16,10 +16,6 @@ Flexbox e Grid Layout: Organização moderna e responsiva dos elementos da pági
 
 Media Queries: Adaptação do layout para diferentes tamanhos de tela, garantindo boa visualização em desktop e mobile.
 
-🔗 Links
-Link Netlify: [Inserir link de deploy aqui]
-
-Repositório GitHub: [Inserir link do repositório aqui]
 
 💻 Responsividade
 O layout foi cuidadosamente ajustado para diferentes resoluções de tela, incluindo:
