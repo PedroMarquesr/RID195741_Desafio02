@@ -4,203 +4,213 @@
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  max-width: 100%;
 }
-
-#navbar {
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
   background-color: #02a28f;
-  color: white;
-  padding: 0.62rem;
-  height: 4.37rem;
-  width: 100%;
+  height: 4.375rem;
+  display: flex;
+  align-items: center;
 }
-#navbar h1 {
-  padding-left: 7.5rem;
 
+header h1 {
   font-size: 2.25rem;
+  padding-left: 9.75rem;
+  color: #ffffff;
 }
-.container {
-  padding-left: 7.5rem;
-  width: 100%;
-}
-.container-right {
-  width: 23rem;
-}
-.container-grid {
+#container-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  margin-right: 9.75rem;
+  margin-left: 9.75rem;
   gap: 1.5rem;
 }
 #banner-article {
-  margin-top: 0.85rem;
+  margin-top: 2.3125rem;
+
+  background-image: url(./assets/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.625rem;
+  color: #ffffff;
+  min-width: 21.625rem;
 }
-#banner-article img:nth-of-type(2) {
-  display: none;
+.box-text-banner-article {
+  margin: 18.18rem auto 1.5rem 1.5rem;
+}
+.box-text-banner-article p {
+  font-size: 1rem;
+}
+.box-text-banner-article h2 {
+  font-size: 1.8rem;
 }
 
-.title-container {
-  color: white;
-  background-color: #02a28f;
-  font-size: 1.25rem;
+.title-section {
   height: 3rem;
+  background-color: #02a28f;
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  border-radius: 0.625rem;
+  color: white;
   justify-content: space-between;
-  border-radius: 0.65rem;
-  width: 100%;
+  margin-bottom: 1.25rem;
 }
-.title-container h2 {
-  font-size: 1.25rem;
-}
-.title-container p {
+.title-section p {
   text-decoration: underline;
-  font-size: 0.875rem;
 }
 
-#top-posts {
-  margin-top: 3rem;
+#section-side-card {
+  width: 22.5rem;
+  margin-top: 3.125rem;
 }
-.top-posts-card {
+
+.article-side-card {
   display: flex;
-  margin-top: 1.5rem;
-  margin-left: 0.75rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+  padding: 0.85rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.top-posts-card * {
-  margin-right: 0.75rem;
+
+.article-side-card h2 {
+  font-size: 0.87rem;
 }
-.top-posts-card > h2 {
-  font-size: 1.25rem;
-}
-.top-posts-card > p {
-  font-weight: normal;
+.article-side-card p {
   color: #616161;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
-.underline {
-  text-decoration: underline;
-  font-size: 0.875rem;
+.box-text {
+  width: 100%;
+  padding-left: 0.75rem;
 }
-.margin-bottom-recent-posts {
-  margin-bottom: 0.6875rem;
+
+#recent-posts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
 }
-.card {
+
+.recent-posts-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100%;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.card-text {
-  flex-grow: 1;
+.recent-posts-card img {
+  height: 12rem; /* ou a altura que você quiser */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem; /* opcional, só pra estética */
+}
+.recent-posts-card-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0.9375rem;
+  font-size: 0.87rem;
+  flex: 1; /* ocupa o espaço do card pai */
 }
-
-.card-text > * {
-  padding-top: 0.5rem;
+.recent-posts-card-text h2 {
+  font-size: 1.25rem;
 }
-.card-text > :first-child {
+.recent-posts-card-text p:nth-child(1) {
   color: #02a28f;
   font-size: 0.875rem;
 }
-
-.card-text h2 {
-  font-size: 1.25rem;
-}
-.card-subtitle {
+.recent-posts-card-text p:nth-child(2) {
   color: #616161;
+  font-size: 0.875rem;
 }
-
-#categories ul {
-  list-style: none;
-}
-#categories li {
-  margin-top: 0.87rem;
-}
-.li-category {
-  display: flex;
-  justify-content: space-between;
-  color: #616161;
-}
-
-#recent-posts {
+#article-container-recents-posts {
   margin-bottom: 4.06rem;
 }
-.card {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+.categories-list {
+  list-style: none;
 }
+.categories-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
 footer {
-  height: 3rem;
   background-color: #02a28f;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer h3 {
-  font-size: 0.875rem;
   color: white;
+  height: 3rem;
 }
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
-
-  .container-right {
-    width: 100%;
-  }
-
-  .container-grid {
-    grid-template-columns: 1fr;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  #categories {
-    margin-bottom: 2rem;
-  }
-  #navbar {
+footer p {
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+@media (max-width: 900px) {
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #navbar h1 {
-    font-size: 1.5rem;
-    padding-left: 0;
+  header h1 {
+    padding: 0;
+    font-size: 1.6rem;
+  }
+  #container-grid {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 1rem;
   }
 
-  #top-posts {
-    margin-top: 1rem;
-  }
-
-  .top-posts-card {
-    margin-left: 0;
+  #section-side-card {
     width: 100%;
+    margin-top: 2rem;
   }
 
-  .title-container {
-    padding: 0 0.5rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  #recent-posts-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  footer {
-    text-align: center;
-    padding: 0.5rem;
+  .recent-posts-card img {
+    height: auto;
+    max-height: 12rem;
   }
-  #title-container-posts {
+
+  .box-text-banner-article {
+    margin: 10rem 1rem 1.5rem 1rem;
+  }
+
+  header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
-  #banner-article img:first-of-type {
-    display: none;
+
+  #banner-article {
+    height: 24.75rem;
   }
-  #banner-article img:nth-of-type(2) {
-    display: flex;
+  .box-text-banner-article {
+    margin: 17rem 1.5rem 1.5rem 1.5rem;
+    padding-bottom: 1px;
+  }
+
+  #container-grid {
+    margin: 0.5rem;
+  }
+  #article-container-recents-posts {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 1146px) {
+  #recent-posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
   }
 }
